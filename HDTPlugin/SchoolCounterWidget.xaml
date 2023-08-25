@@ -14,7 +14,7 @@
     <ItemsControl.ItemTemplate>
         <DataTemplate>
             <StackPanel Orientation="Horizontal">
-                <Label Content="{Binding Path=SpellSchool}" FontSize="14" FontWeight="SemiBold" Foreground="White" Background="#312B2A" BorderBrush="White" BorderThickness="1" Width="80" Height ="34" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label Content="{Binding Path=SpellSchool}" FontSize="14" FontWeight="SemiBold" Foreground="White" Background="#312B2A" BorderBrush="Black" BorderThickness="1" Width="80" Height ="34" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
                 <Rectangle Fill="{Binding Background}" Height="34" Width="217" />
             </StackPanel>
         </DataTemplate>
