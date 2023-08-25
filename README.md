@@ -1,4 +1,4 @@
-# HDT-Spell-School-Plugin
+# HDT-Spell-School-Tracker-Plugin
 
 A basic Hearthstone Deck Tracker plugin that displays a list of all currently unique casted spell schools. It will not display cards of spell schools that have already been cast. Works with all current cards (as of Hearthstone Patch 27.2).
 
