@@ -18,7 +18,6 @@ namespace SpellSchoolCounter
         {
             _cardListWidget = playerList;
 
-            // Hide in menu, if necessary
             if (Config.Instance.HideInMenu && CoreAPI.Game.IsInMenu)
             {
                 _cardListWidget.Hide();
@@ -26,7 +25,7 @@ namespace SpellSchoolCounter
 
         }
 
-        // Reset on when a new game starts
+        // Triggers when a hearthstone game begins and resets the tracked spell school list
         internal void GameStart()
         {
             _schoolsPlayed = new List<SpellSchool>();
@@ -35,8 +34,10 @@ namespace SpellSchoolCounter
             _cardListWidget.Update(_playedList);
         }
 
+        // Triggers when a card is played by the player
         internal void OnPlayerPlay(Card card)
         {
+            // Only display the card on the tracker if it has a spell school and it isn't already being tracked
             if (card.SpellSchool != SpellSchool.NONE && !_schoolsPlayed.Contains(card.SpellSchool))
             {
                 _schoolsPlayed.Add(card.SpellSchool);
@@ -45,9 +46,10 @@ namespace SpellSchoolCounter
             }
         }
 
-        // Need to handle hiding the element when in the game menu
+        // Triggers when the player is in a hearthstone menu
         internal void InMenu()
         {
+            // Hides the tracker when in a hearthstone menu
             if (Config.Instance.HideInMenu)
             {
                 _cardListWidget.Hide();
