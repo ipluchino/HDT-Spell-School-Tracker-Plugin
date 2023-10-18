@@ -24,7 +24,7 @@ namespace SpellSchoolCounter
         private void UpdatePosition()
         {
             Canvas.SetTop(this, 25);
-            Canvas.SetRight(this, 250);
+            Canvas.SetRight(this, 280);
         }
 
         public void Show()
