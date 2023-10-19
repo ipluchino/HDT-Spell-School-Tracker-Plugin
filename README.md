@@ -4,6 +4,6 @@ A basic Hearthstone Deck Tracker plugin that displays a list of all currently un
 
 ![ScreenShot](HDTPlugin/Example.png)
 
-This is the first time I've worked with code for an HDT plugin and credit for the initial logic/syntax goes to:
+# Help From:
 https://github.com/HearthSim/Hearthstone-Deck-Tracker/wiki/Creating-Plugins - Basic Tutorial <br />
 https://github.com/slicedbread/HDT-SpellSchoolCounter-Plugin - Old Spell School Plugin <br /> 
